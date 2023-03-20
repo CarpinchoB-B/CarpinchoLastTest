@@ -27,6 +27,7 @@ const damageInfo = document.getElementById('click_dmg');
 const coolDownFirst = document.getElementById('ability1_cd');
 const coolDownSecond = document.getElementById('ability2_cd');
 const timeInStatistics = document.getElementById('time');
+const resize = document.getElementById('ResizePicture');
 
 const weapons = new Array();
 weapons.push(document.getElementById("WeakSword"));
@@ -158,6 +159,16 @@ brightnessSlider.addEventListener('change',()=>
 {
     brightnessWindow.style.backgroundColor = `rgba(0, 0, 0, ${brightnessSlider.value / 100})`;
 })
+
+resize.addEventListener('click',()=>
+{
+    if (document.fullscreenElement) {
+        document.exitFullscreen();
+      } else {
+        document.documentElement.requestFullscreen();
+      }
+    
+});
 
 musicSlider.addEventListener('change',()=>
 {
