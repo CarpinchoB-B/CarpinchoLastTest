@@ -129,3 +129,11 @@
     margin-top: 5px;
     font-size: 20px;
 }
+
+#ResizePicture
+{
+    height: 40px;
+    width: 40px;
+    margin-left: 25px;
+    margin-top: 5px;
+}
