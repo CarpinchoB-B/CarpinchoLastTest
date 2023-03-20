@@ -100,16 +100,6 @@ if(localStorage.getItem('currentSave') == 'First' || localStorage.getItem('curre
         damage = Number(localStorage.getItem('damage'));
         clicks = Number(localStorage.getItem('clicks'));
         timeIn = Number(localStorage.getItem('time'));
-        // timeThis = Number(localStorage.getItem('timeThis'));
-        // timeIncrease = Number(localStorage.getItem('increaseTime'));
-        // if(timeThis <= 0)
-        // {
-        //     timeThis = 0;
-        // }
-        // if(timeIncrease<=0)
-        // {
-        //     timeIncrease = 0;
-        // }
         if(timeIn <= 0)
         {
             timeIn = 0;
@@ -140,26 +130,6 @@ if(localStorage.getItem('time') != null)
     timeInStatistics.textContent = localStorage.getItem('time');
 }
 console.log("DAMAGE :" + damage);
-
-// load.addEventListener('click',()=>
-// {
-//     testDamage.value = localStorage.getItem('currentEnemyHealth');  
-//     console.log(testDamage.value);
-//     money.textContent = localStorage.getItem('currentMoney');
-//     myMoney = localStorage.getItem('currentMoney');
-//     enemyNumber = localStorage.getItem('currentEnemy');
-//     enemyForeground.src  = Enemies[enemyNumber];
-//     weapons[0].textContent = parseInt(localStorage.getItem('currentWeakSword'),10);
-//     weapons[1].textContent = parseInt(localStorage.getItem('currentSword'),10);
-//     weapons[2].textContent = parseInt(localStorage.getItem('currentStrongSword'),10);
-//     weapons[3].textContent = parseInt(localStorage.getItem('currentWeakAxe'),10);
-//     weapons[4].textContent = parseInt(localStorage.getItem('currentWeakShield'),10);
-//     weapons[5].textContent = parseInt(localStorage.getItem('currentStrongShield'),10);
-//     weapons[6].textContent = parseInt(localStorage.getItem('currentStrongAxe'),10);
-//     increasedMoney = localStorage.getItem('increase');
-//     difficult = localStorage.getItem('difficult');
-//     damage = localStorage.getItem('damage');
-// });
 
 save.addEventListener('click',()=>
 {
