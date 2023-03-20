@@ -113,6 +113,27 @@
     right: 0px;
 }
 
-.brightness_icon{
-    transform: rotate(180deg);
+.Stats{
+    border: 3px solid black;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px;
+}
+
+.smallbox_stats{
+    display: flex;
+    white-space: pre;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+#ResizePicture
+{
+    height: 40px;
+    width: 40px;
+    margin-left: 25px;
+    margin-top: 5px;
 }
